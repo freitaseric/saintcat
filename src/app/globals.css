@@ -3,17 +3,21 @@
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-primary: #6c99bb;
+  --color-secondary: #a1a1a1;
+  --color-danger: #ca1243;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #383a42;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2e2e2e;
+    --foreground: #d6d6d6;
   }
 }
 
