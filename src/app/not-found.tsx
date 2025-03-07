@@ -1,5 +1,6 @@
 'use client'
 
+import styles from './NotFound.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -13,12 +14,15 @@ export default function NotFoundPage() {
 				<h2 className="text-xl font-medium">404</h2>
 				<h1 className="text-2xl font-bold">Página não Encotrada!</h1>
 			</div>
-			<Image
-				alt="Ilustração"
-				src="/404.png"
-				width={256}
-				height={256}
-			/>
+			<div className={styles.imageContainer}>
+				<Image
+					alt="Ilustração"
+					src="/404.png"
+					width={256}
+					height={256}
+					className={styles.image}
+				/>
+			</div>
 			<div className="col-span-2 flex flex-row justify-center items-center gap-16">
 				<Link
 					href="/"

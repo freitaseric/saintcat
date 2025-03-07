@@ -19,7 +19,7 @@ export function AppHeader() {
 	}
 
 	return (
-		<header className="flex flex-row justify-between px-8 items-center w-screen py-2 border-b-[1px] border-secondary mb-16">
+		<header className="flex flex-row justify-between px-8 items-center w-screen py-2 border-b-[1px] border-secondary mb-8">
 			<Link href="/">
 				<Image
 					alt="Website Logo"

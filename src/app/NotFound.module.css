@@ -1,0 +1,22 @@
+.imageContainer {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  overflow: hidden; 
+  border-bottom-width: 2px;
+  border-color: var(--color-secondary);
+}
+
+.image {
+  position: absolute;
+  bottom: -100%; 
+  left: 0;
+  width: 100%;
+  animation: slide-up 2s ease-out forwards;
+}
+
+@keyframes slide-up {
+  to {
+    bottom: 0;
+  }
+}
