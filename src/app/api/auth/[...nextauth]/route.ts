@@ -1,3 +1,3 @@
-import { handlers } from "@/lib";
+import { handlers } from '@/lib'
 
 export const { GET, POST } = handlers
