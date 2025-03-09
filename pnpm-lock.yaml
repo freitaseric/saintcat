@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@clerk/localizations':
+        specifier: ^3.11.1
+        version: 3.11.1
       '@clerk/nextjs':
         specifier: ^6.12.4
         version: 6.12.4(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      '@clerk/themes':
+        specifier: ^2.2.20
+        version: 2.2.20
       '@prisma/client':
         specifier: 6.4.1
         version: 6.4.1(prisma@6.4.1(typescript@5.8.2))(typescript@5.8.2)
@@ -128,6 +134,10 @@ packages:
       react: ^18.0.0 || ^19.0.0 || ^19.0.0-0
       react-dom: ^18.0.0 || ^19.0.0 || ^19.0.0-0
 
+  '@clerk/localizations@3.11.1':
+    resolution: {integrity: sha512-obS6fiQEeQbz3a2xHhxeLJDWfhwGVTt9BiwOSNMPzUE2AF8I8UdzCunYTOx9/pzqPYTfcwKl990N8PAjDkhBLA==}
+    engines: {node: '>=18.17.0'}
+
   '@clerk/nextjs@6.12.4':
     resolution: {integrity: sha512-jBfG0JKXgqHlPUuC5KN8s+bHCaX9y3r4UpMHy707y5PBWidrQHIxu9lkEGBnayxXDE/BsKDoKWs/knqTxR3AjA==}
     engines: {node: '>=18.17.0'}
@@ -147,6 +157,10 @@ packages:
         optional: true
       react-dom:
         optional: true
+
+  '@clerk/themes@2.2.20':
+    resolution: {integrity: sha512-ck93Yjpef8LQLXbMuVHYYbbZK+iESGvboT0zvR4Z8vmSePiNpFCvKHpl22hVdUxUPum4QhocuuOYFqxJ2nVSyQ==}
+    engines: {node: '>=18.17.0'}
 
   '@clerk/types@4.47.0':
     resolution: {integrity: sha512-xB/gqMq6cq6/47ymKs0WaaxKEFPzlvbSgJTLFIfnPMnFSNwYE4WVgVh6geFx6qWr3z588JDDZkJskBHZlgPmQQ==}
@@ -965,6 +979,10 @@ snapshots:
       react-dom: 19.0.0(react@19.0.0)
       tslib: 2.4.1
 
+  '@clerk/localizations@3.11.1':
+    dependencies:
+      '@clerk/types': 4.47.0
+
   '@clerk/nextjs@6.12.4(next@15.2.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)':
     dependencies:
       '@clerk/backend': 1.25.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -989,6 +1007,11 @@ snapshots:
     optionalDependencies:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
+
+  '@clerk/themes@2.2.20':
+    dependencies:
+      '@clerk/types': 4.47.0
+      tslib: 2.4.1
 
   '@clerk/types@4.47.0':
     dependencies:
